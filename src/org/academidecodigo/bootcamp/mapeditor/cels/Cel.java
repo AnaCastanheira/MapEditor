@@ -10,15 +10,13 @@ public class Cel {
 
     protected int row;
     protected int col;
-    protected int color;
     protected Rectangle rectangle;
 
 
-    public Cel(int row, int col, Color color) {
+    public Cel(int row, int col) {
         this.row = row;
         this.col = col;
-        this.color = color;
-        this.rectangle = rectangle;
+        this.rectangle = new Rectangle (row, col, );
 
     }
 
