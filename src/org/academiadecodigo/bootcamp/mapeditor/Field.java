@@ -14,6 +14,7 @@ public class Field {
        this.nrOfCols = nrOfCols;
        this.nrOfRows = nrOfRows;
        this.grid = gridConstruction(nrOfRows,nrOfCols);
+       //this.grid = new Cell [nrOfRows][nrOfCols];
 
    }
 
@@ -21,10 +22,11 @@ public class Field {
 
        Cell [] rows = new Cell[nrOfRows];
        Cell [] cols = new Cell[nrOfCols];
+       Cell [][] grid = new Cell[nrOfRows][nrOfCols];
 
        for (int i =0; i<rows.length; i++) {
            for (int j=0; j<cols.length; j++) {
-               grid [i][j] = new Cell(i,j);
+               grid[i][j] = new Cell(i, j);
            }
        }
        return grid;
