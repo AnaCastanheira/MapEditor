@@ -5,19 +5,25 @@ import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 import org.academiadecodigo.simplegraphics.pictures.Color;
 
 
-public class Cel {
+public class Cell {
 
 
     protected int row;
     protected int col;
     protected Rectangle rectangle;
+    private boolean painted;
 
 
-    public Cel(int row, int col) {
+    public Cell(int row, int col) {
         this.row = row;
         this.col = col;
-        this.rectangle = new Rectangle (row, col, );
+        this.painted = painted;
+        this.rectangle = new Rectangle (row*10, col*10, 10,10 );
 
+    }
+
+    public boolean isPainted() {
+        return this.painted;
     }
 
 

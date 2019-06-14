@@ -1,34 +1,33 @@
 package org.academiadecodigo.bootcamp.mapeditor;
 
-import java.awt.*;
+import org.academiadecodigo.simplegraphics.graphics.Rectangle;
+import org.academidecodigo.bootcamp.mapeditor.cels.Cell;
 
 public class Field {
 
    private int nrOfRows;
    private int nrOfCols;
-   private Cel [] cel;
-   private Rectangle field;
+   private Cell[][] grid;
+
 
    public Field (int nrOfRows, int nrOfCols) {
        this.nrOfCols = nrOfCols;
        this.nrOfRows = nrOfRows;
-       this.field = field;
-       this.cels = fieldConstruction(nrOfRows,nrOfCols);
+       this.grid = gridConstruction(nrOfRows,nrOfCols);
 
    }
 
-   public [] fieldConstruction(int nrOfRows, int nrOfCols) {
+   public Cell[][] gridConstruction(int nrOfRows, int nrOfCols) {
 
-       Cel [] cels = [nrOfCols*nrOfRows];
+       Cell [] rows = new Cell[nrOfRows];
+       Cell [] cols = new Cell[nrOfCols];
 
-
-
-
-
-       return
+       for (int i =0; i<rows.length; i++) {
+           for (int j=0; j<cols.length; j++) {
+               grid [i][j] = new Cell(i,j);
+           }
+       }
+       return grid;
    }
-
-
-
 
 }

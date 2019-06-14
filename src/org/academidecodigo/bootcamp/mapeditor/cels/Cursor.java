@@ -1,12 +1,10 @@
 package org.academidecodigo.bootcamp.mapeditor.cels;
 
-import org.academidecodigo.bootcamp.mapeditor.cels.Cel;
-
-public class Cursor extends Cel {
+public class Cursor extends Cell {
 
 
     public Cursor () {
-        super();
+        super(10,10);
     }
 
 
