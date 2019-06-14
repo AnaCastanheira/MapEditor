@@ -9,8 +9,12 @@ public class Main {
 
         //MapEditor mapEditor = new MapEditor();
 
+
+
         Field field = new Field (30,30);
         Cursor cursor = new Cursor(0,0);
+
+        Keyboard keyboard = new Keyboard(cursor);
 
 
 
