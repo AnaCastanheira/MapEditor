@@ -14,9 +14,9 @@ public class Field {
        this.nrOfCols = nrOfCols;
        this.nrOfRows = nrOfRows;
        this.grid = gridConstruction(nrOfRows,nrOfCols);
-       //this.grid = new Cell [nrOfRows][nrOfCols];
 
    }
+
 
    public Cell[][] gridConstruction(int nrOfRows, int nrOfCols) {
 
@@ -30,6 +30,6 @@ public class Field {
            }
        }
        return grid;
-   }
 
+   }
 }

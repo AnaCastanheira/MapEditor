@@ -4,16 +4,16 @@ import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
 import org.academidecodigo.bootcamp.mapeditor.cels.Cursor;
 
-public class MapEditor implements KeyboardHandler {
+public class MapEditor {
 
 
     private Field field;
     private Cursor cursor;
 
 
-    public MapEditor () {
-        this.field = field;
-        this.cursor = cursor;
+    public MapEditor() {
+        this.field = new Field(30, 30);
+        this.cursor = new Cursor(0, 0);
 
     }
 
@@ -22,14 +22,4 @@ public class MapEditor implements KeyboardHandler {
 
     }
 
-
-    @Override
-    public void keyPressed(KeyboardEvent keyboardEvent) {
-
-    }
-
-    @Override
-    public void keyReleased(KeyboardEvent keyboardEvent) {
-
-    }
 }
