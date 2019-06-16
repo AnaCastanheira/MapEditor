@@ -1,7 +1,6 @@
-package org.academidecodigo.bootcamp.mapeditor.cels;
+package org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.mapeditor.cels;
 
 import org.academiadecodigo.simplegraphics.graphics.Rectangle;
-import org.academiadecodigo.simplegraphics.pictures.Color;
 
 
 public class Cell {

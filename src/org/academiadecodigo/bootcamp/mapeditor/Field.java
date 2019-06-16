@@ -1,7 +1,7 @@
 package org.academiadecodigo.bootcamp.mapeditor;
 
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
-import org.academidecodigo.bootcamp.mapeditor.cels.Cell;
+import org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.mapeditor.cels.Cell;
+
 
 public class Field {
 

@@ -1,7 +1,6 @@
-package org.academidecodigo.bootcamp.mapeditor.cels;
+package org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.mapeditor.cels;
 
 import org.academiadecodigo.simplegraphics.graphics.Color;
-import org.academiadecodigo.simplegraphics.graphics.Rectangle;
 
 
 public class Cursor extends Cell {
@@ -18,18 +17,22 @@ public class Cursor extends Cell {
 
     public void moveRight() {
         super.col = col++;
+        rectangle.translate(20,0);
     }
 
     public void moveLeft() {
         super.col = col--;
+        rectangle.translate(-20,0);
     }
 
     public void moveUp() {
         super.row = row--;
+        rectangle.translate(0,-20);
     }
 
     public void moveDown() {
         super.row = row++ ;
+        rectangle.translate(0,20);
     }
 
 }

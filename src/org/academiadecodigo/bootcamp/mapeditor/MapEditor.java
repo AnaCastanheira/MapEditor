@@ -1,24 +1,27 @@
 package org.academiadecodigo.bootcamp.mapeditor;
 
-import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
-import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
-import org.academidecodigo.bootcamp.mapeditor.cels.Cursor;
+import org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.mapeditor.cels.Cursor;
 
 public class MapEditor {
 
 
-    private Field field;
-    private Cursor cursor;
+    protected Field field;
+    protected Cursor cursor;
 
 
-    public MapEditor() {
-        this.field = new Field(30, 30);
+
+    public MapEditor(int nrOfRows, int nrOfCols) {
+        this.field = new Field(nrOfRows,nrOfCols);
         this.cursor = new Cursor(0, 0);
 
     }
 
 
     public void initi() {
+
+
+
+
 
     }
 
