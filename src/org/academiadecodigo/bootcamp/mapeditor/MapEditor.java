@@ -1,6 +1,6 @@
 package org.academiadecodigo.bootcamp.mapeditor;
 
-import org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.mapeditor.cels.Cursor;
+import org.academiadecodigo.bootcamp.mapeditor.cels.Cursor;
 
 public class MapEditor {
 
@@ -33,16 +33,21 @@ public class MapEditor {
         cursor.moveDown();
     }
 
-
     public void changeColor() {
-
         field.changeCellColor(cursor.getCol(), cursor.getRow());
     }
 
     public void clearField() {
-
         field.clearAll();
-
     }
 
+    /*
+    public void save() {
+        field.writeFileByLine();
+    }
+
+    public void open() {
+        field.readFileByLine();
+    }
+    */
 }

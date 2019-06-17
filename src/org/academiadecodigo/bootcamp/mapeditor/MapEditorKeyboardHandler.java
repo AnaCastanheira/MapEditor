@@ -1,7 +1,5 @@
 package org.academiadecodigo.bootcamp.mapeditor;
 
-import org.academiadecodigo.bootcamp.mapeditor.MapEditor;
-import org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.mapeditor.cels.Cursor;
 import org.academiadecodigo.simplegraphics.keyboard.Keyboard;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
@@ -53,14 +51,15 @@ public class MapEditorKeyboardHandler implements KeyboardHandler {
                  mapEditor.clearField();
             break;
 
+            /*
             case KeyboardEvent.KEY_S:
-                 mapEditor.clearField();
+                 mapEditor.save();
             break;
 
             case KeyboardEvent.KEY_O:
-                 mapEditor.clearField();
+                 mapEditor.open();
             break;
-
+*/
         }
     }
 

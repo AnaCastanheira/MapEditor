@@ -1,4 +1,4 @@
-package org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.mapeditor.cels;
+package org.academiadecodigo.bootcamp.mapeditor.cels;
 
 import org.academiadecodigo.simplegraphics.graphics.Color;
 
