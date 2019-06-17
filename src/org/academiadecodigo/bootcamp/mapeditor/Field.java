@@ -2,6 +2,9 @@ package org.academiadecodigo.bootcamp.mapeditor;
 
 import org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.mapeditor.cels.Cell;
 
+import java.io.FileWriter;
+import java.io.IOException;
+
 
 public class Field {
 
@@ -53,7 +56,23 @@ public class Field {
                grid[i][j].cleanRectangle();
            }
        }
-
    }
+
+
+    private void writeFileByLine(String file, String text) throws IOException {
+
+        FileWriter writer = new FileWriter("/Users/codecadet/workspace/mapEditor.TXT");
+
+        BufferedWriter bWriter = new BufferedWriter(writer);
+
+        bWriter.writer(text);
+
+        bWriter.flush();
+
+        bWriter.close();
+
+
+    }
+
 
 }
