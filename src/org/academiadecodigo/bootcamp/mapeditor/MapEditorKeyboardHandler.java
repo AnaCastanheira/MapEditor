@@ -11,18 +11,14 @@ public class MapEditorKeyboardHandler implements KeyboardHandler {
 
     private Keyboard keyboard;
     private MapEditor mapEditor;
-    //private Cursor cursor;
-
 
 
     public MapEditorKeyboardHandler(MapEditor mapEditor){
 
         this.mapEditor = mapEditor;
-        //this.cursor = cursor;
         keyboard = new Keyboard(this);
         addKeysAndEvents();
     }
-
 
 
     @Override
@@ -31,25 +27,25 @@ public class MapEditorKeyboardHandler implements KeyboardHandler {
         switch (keyboardEvent.getKey()){
 
             case KeyboardEvent.KEY_RIGHT:
-                 mapEditor.cursor.moveRight();
+                 mapEditor.goRight();
             break;
 
             case KeyboardEvent.KEY_LEFT:
-                 mapEditor.cursor.moveLeft();
+                 mapEditor.goLeft();
             break;
 
             case KeyboardEvent.KEY_UP:
-                 mapEditor.cursor.moveUp();
+                 mapEditor.goUp();
             break;
 
             case KeyboardEvent.KEY_DOWN:
-                 mapEditor.cursor.moveDown();
+                 mapEditor.goDown();
             break;
-/*
-            case KeyboardEvent.KEY_SPACE:
 
-                 break;
-*/
+            case KeyboardEvent.KEY_SPACE:
+                 mapEditor.changeColor();
+            break;
+
         }
     }
 

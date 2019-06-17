@@ -17,7 +17,6 @@ public class Field {
 
    }
 
-
    public Cell[][] gridConstruction(int nrOfRows, int nrOfCols) {
 
        Cell [] rows = new Cell[nrOfRows];
@@ -32,4 +31,15 @@ public class Field {
        return grid;
 
    }
+
+   public void changeCellColor(int row, int col){
+
+       if (!(grid[row][col].isPainted())) {
+           grid[row][col].paintRectangle();
+           return;
+       }
+       grid[row][col].cleanRectangle();
+
+   }
+
 }

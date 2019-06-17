@@ -5,9 +5,8 @@ import org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.map
 public class MapEditor {
 
 
-    protected Field field;
-    protected Cursor cursor;
-
+    private Field field;
+    private Cursor cursor;
 
 
     public MapEditor(int nrOfRows, int nrOfCols) {
@@ -16,13 +15,34 @@ public class MapEditor {
 
     }
 
-
-    public void initi() {
-
-
-
-
-
+    public void goRight() {
+        cursor.moveRight();
     }
+
+    public void goLeft() {
+        cursor.moveLeft();
+    }
+
+    public void goUp() {
+        cursor.moveUp();
+    }
+
+    public void goDown() {
+        cursor.moveDown();
+    }
+
+    public void changeColor() {
+        field.changeCellColor(cursor.getCol(), cursor.getRow());
+    }
+
+
+
+
+
+
+
+
+
+
 
 }
