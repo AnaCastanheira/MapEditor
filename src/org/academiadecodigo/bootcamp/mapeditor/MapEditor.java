@@ -10,10 +10,12 @@ public class MapEditor {
 
 
     public MapEditor(int nrOfRows, int nrOfCols) {
+
         this.field = new Field(nrOfRows,nrOfCols);
         this.cursor = new Cursor(0, 0);
 
     }
+
 
     public void goRight() {
         cursor.moveRight();
@@ -31,18 +33,16 @@ public class MapEditor {
         cursor.moveDown();
     }
 
+
     public void changeColor() {
+
         field.changeCellColor(cursor.getCol(), cursor.getRow());
     }
 
+    public void clearField() {
 
+        field.clearAll();
 
-
-
-
-
-
-
-
+    }
 
 }

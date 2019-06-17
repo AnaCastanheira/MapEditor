@@ -7,10 +7,13 @@ import org.academiadecodigo.simplegraphics.keyboard.KeyboardEvent;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardEventType;
 import org.academiadecodigo.simplegraphics.keyboard.KeyboardHandler;
 
+
 public class MapEditorKeyboardHandler implements KeyboardHandler {
+
 
     private Keyboard keyboard;
     private MapEditor mapEditor;
+
 
 
     public MapEditorKeyboardHandler(MapEditor mapEditor){
@@ -46,8 +49,21 @@ public class MapEditorKeyboardHandler implements KeyboardHandler {
                  mapEditor.changeColor();
             break;
 
+            case KeyboardEvent.KEY_C:
+                 mapEditor.clearField();
+            break;
+
+            case KeyboardEvent.KEY_S:
+                 mapEditor.clearField();
+            break;
+
+            case KeyboardEvent.KEY_O:
+                 mapEditor.clearField();
+            break;
+
         }
     }
+
 
     @Override
     public void keyReleased(KeyboardEvent keyboardEvent) {
@@ -56,10 +72,12 @@ public class MapEditorKeyboardHandler implements KeyboardHandler {
 
 
     private void setKeyAndEvent(int key, KeyboardEventType type){
+
         KeyboardEvent event = new KeyboardEvent();
         event.setKey(key);
         event.setKeyboardEventType(type);
         keyboard.addEventListener(event);
+
     }
 
 
@@ -74,6 +92,13 @@ public class MapEditorKeyboardHandler implements KeyboardHandler {
         setKeyAndEvent(KeyboardEvent.KEY_RIGHT, KeyboardEventType.KEY_PRESSED);
 
         setKeyAndEvent(KeyboardEvent.KEY_LEFT, KeyboardEventType.KEY_PRESSED);
+
+        setKeyAndEvent(KeyboardEvent.KEY_C, KeyboardEventType.KEY_PRESSED);
+
+        setKeyAndEvent(KeyboardEvent.KEY_S, KeyboardEventType.KEY_PRESSED);
+
+        setKeyAndEvent(KeyboardEvent.KEY_O, KeyboardEventType.KEY_PRESSED);
+
 
     }
 

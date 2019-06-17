@@ -5,17 +5,20 @@ import org.academiadecodigo.bootcamp.mapeditor.org.academiadecodigo.bootcamp.map
 
 public class Field {
 
+
+   private Cell[][] grid;
    private int nrOfRows;
    private int nrOfCols;
-   private Cell[][] grid;
 
 
    public Field (int nrOfRows, int nrOfCols) {
-       this.nrOfCols = nrOfCols;
+
        this.nrOfRows = nrOfRows;
+       this.nrOfCols = nrOfCols;
        this.grid = gridConstruction(nrOfRows,nrOfCols);
 
    }
+
 
    public Cell[][] gridConstruction(int nrOfRows, int nrOfCols) {
 
@@ -39,6 +42,17 @@ public class Field {
            return;
        }
        grid[row][col].cleanRectangle();
+
+   }
+
+
+   public void clearAll() {
+
+       for (int i =0; i<nrOfRows; i++) {
+           for (int j=0; j<nrOfCols; j++) {
+               grid[i][j].cleanRectangle();
+           }
+       }
 
    }
 
