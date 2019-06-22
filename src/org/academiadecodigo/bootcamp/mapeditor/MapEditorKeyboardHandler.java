@@ -51,7 +51,7 @@ public class MapEditorKeyboardHandler implements KeyboardHandler {
                  mapEditor.clearField();
             break;
 
-            /*
+
             case KeyboardEvent.KEY_S:
                  mapEditor.save();
             break;
@@ -59,7 +59,6 @@ public class MapEditorKeyboardHandler implements KeyboardHandler {
             case KeyboardEvent.KEY_O:
                  mapEditor.open();
             break;
-*/
         }
     }
 

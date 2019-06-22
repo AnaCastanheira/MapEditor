@@ -41,13 +41,12 @@ public class MapEditor {
         field.clearAll();
     }
 
-    /*
+
     public void save() {
-        field.writeFileByLine();
+        FileManager.writeFileByLine(field.fileToString());
     }
 
     public void open() {
-        field.readFileByLine();
+        field.stringToFile(FileManager.readFileByLine());
     }
-    */
 }
